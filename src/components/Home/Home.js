@@ -8,7 +8,7 @@ import Type from "./Type";
 
 function Home() {
   return (
-    <section style={{ backgroundColor: "#282c34", color: "#ffffff" }}>
+    <section>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -31,16 +31,23 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{
-                  maxWidth: "100%",   // Ensures the image scales down
-                  height: "auto",     // Maintains the aspect ratio
-                  borderRadius: "50%",
-                  backgroundColor: "black",
+                  maxWidth: "100%",             // Use quotes for values
+                  height: "auto",
+                  borderRadius: "50%",        // Use camelCase
+                  backgroundColor: "black", // Use camelCase
+                  // display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  // color: "white",
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                  textAlign: "center",
                 }}
               />
             </Col>
