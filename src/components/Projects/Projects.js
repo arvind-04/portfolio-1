@@ -7,6 +7,7 @@ import editor from "../../Assets/Projects/Quiz.png";
 import chatify from "../../Assets/Projects/vecteezy_task-and-checklist_16390548.png";
 import suicide from "../../Assets/Projects/logo copy.png";
 import littleOnes from "../../Assets/Projects/logo.png";
+import Hotel from './../../Assets/hotel.png';
 
 function Projects() {
   return (
@@ -20,6 +21,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Hotel}
+              isBlog={false}
+              title="Hotel Website"
+              description="I developed a responsive React website for Hotel Shree Ji Palace, a luxurious hotel in Udaipur, Rajasthan. The site features components like About Us, Amenities, Services, Rooms, and Testimonials, offering a comprehensive showcase of the hotel. It utilizes React hooks and modern concepts for smooth functionality and user experience. This project highlights my skills in web development and design."
+              ghLink="https://github.com/arvind-04/HotelShreeJiPalace"
+              demoLink="http://hotelshreejipalace.online"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
