@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/arvind-2 Background Removed.png";
+import homeLogo from "../../Assets/me Background Removed.png";
 
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import "./Home.css";
 
 function Home() {
   return (
@@ -35,19 +36,18 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid home-logo"
                 style={{
-                  maxWidth: "100%",             // Use quotes for values
+                  maxWidth: "50%",
                   height: "auto",
-                  borderRadius: "50%",        // Use camelCase
-                  backgroundColor: "black", // Use camelCase
-                  // display: "flex",
+                  borderRadius: "30%",
+                  backgroundColor: "black",
                   alignItems: "center",
                   justifyContent: "center",
-                  // color: "white",
                   fontSize: "20px",
                   fontWeight: "bold",
                   textAlign: "center",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease"
                 }}
               />
             </Col>
@@ -60,3 +60,5 @@ function Home() {
 }
 
 export default Home;
+
+

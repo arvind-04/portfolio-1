@@ -66,10 +66,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/certifications"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Certifications
               </Nav.Link>
             </Nav.Item>
 

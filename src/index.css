@@ -6,3 +6,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.3s ease;
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

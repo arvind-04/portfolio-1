@@ -8,7 +8,9 @@ import chatify from "../../Assets/Projects/vecteezy_task-and-checklist_16390548.
 import suicide from "../../Assets/Projects/logo copy.png";
 import littleOnes from "../../Assets/Projects/logo.png";
 import Hotel from './../../Assets/hotel.png';
-
+import EnergyMonitor from './../../Assets/Projects/energy.png';
+import Agricycle from './../../Assets/Projects/agicycle.png';
+import UMSProject from './../../Assets/Projects/ums.png';
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,6 +23,36 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={EnergyMonitor}
+    isBlog={false}
+    title="Energy Monitor Website"
+    description="I developed a Laravel-based web application for monitoring soil moisture and UV radiation levels to support sustainable farming practices. The platform provides real-time data visualization and analytics, enabling users to make informed agricultural decisions. This project demonstrates my backend and frontend skills using PHP, Laravel, and data interpretation."
+    ghLink="https://github.com/arvind-04/weather_laravel"
+  />
+</Col>
+
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={Agricycle}
+    isBlog={false}
+    title="AgriCycle Android App"
+    description="I created an Android application in Kotlin named AgriCycle, aimed at supporting farmers by providing a digital platform for crop information, weather updates, and equipment sharing. It follows modern Android architecture with features like MVVM, LiveData, and Room Database. This project highlights my proficiency in mobile app development and user-centric design."
+    ghLink="https://drive.google.com/file/d/1U7Sb81uVRtSc56l0NiAvdKkYRmYJWE-I/view?usp=share_link"
+  />
+</Col>
+
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={UMSProject}
+    isBlog={false}
+    title="User Management System (UMS)"
+    description="I built a User Management System in Java using AWT to provide functionalities such as user registration, login, profile management, and role-based access control. This desktop application demonstrates my knowledge of Java programming, GUI development with AWT, and handling user data securely."
+    
+  />
+</Col>
+
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Hotel}
